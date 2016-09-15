@@ -1,0 +1,26 @@
+{
+  "name": "htmlpdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=-nodemon:watch ./node_modules/.bin/nodemon -L ./app.js | bunyan",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "bunyan": "1.8.1",
+    "cors": "2.8.1",
+    "express": "4.14.0",
+    "html-pdf": "2.1.0",
+    "nodemon": "1.10.2"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0"
+  }
+}

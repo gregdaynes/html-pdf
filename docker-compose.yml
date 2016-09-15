@@ -1,0 +1,26 @@
+version: "2"
+
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    command: npm run start
+    expose:
+      - 3000
+    logging:
+      driver: "json-file"
+    networks:
+      - back-tier
+    restart: always
+    volumes:
+      - "./api:/api"
+    environment:
+        - PORT=3000
+    ports:
+      - "3000:3000"
+
+networks:
+  back-tier:
+    driver: bridge
+
