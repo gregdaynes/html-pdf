@@ -1,0 +1,41 @@
+{
+  "name": "htmlpdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=-nodemon:watch ./node_modules/.bin/nodemon -L"
+  },
+  "keywords": [],
+  "author": "Gregory Daynes / RingPartner",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": ["error", 4],
+        "global-require": 0,
+        "no-use-before-define": ["error", { "functions": false, "classes": true }],
+        "no-param-reassign": 0,
+        "no-underscore-dangle": 0,
+        "import/no-extraneous-dependencies": 0,
+        "space-before-function-paren": 0
+    },
+    "globals": {
+        "ON_DEV": true,
+        "ON_PRODUCTION": true,
+        "ON_TEST": true
+    }
+  },
+  "dependencies": {
+    "express": "4.14.0",
+    "html-pdf": "2.1.0",
+    "nodemon": "1.10.2"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0",
+    "eslint-config-airbnb-base": "7.1.0",
+    "eslint-plugin-import": "1.15.0"
+  }
+}
+
+
