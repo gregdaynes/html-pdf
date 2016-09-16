@@ -28,13 +28,13 @@
   },
   "dependencies": {
     "express": "4.14.0",
-    "html-pdf": "2.1.0"
+    "html-pdf": "2.1.0",
+    "nodemon": "1.10.2"
   },
   "devDependencies": {
     "eslint": "3.5.0",
     "eslint-config-airbnb-base": "7.1.0",
-    "eslint-plugin-import": "1.15.0",
-    "nodemon": "1.10.2"
+    "eslint-plugin-import": "1.15.0"
   }
 }
 

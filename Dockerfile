@@ -5,6 +5,7 @@ FROM node:wheezy
 COPY . /api
 WORKDIR /api
 
+RUN npm install phantomjs-bin
 RUN npm install
 
 EXPOSE 3000
